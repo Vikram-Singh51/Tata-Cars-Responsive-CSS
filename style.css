@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;   
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    min-height: 100vh;
+
+}
+
+#top{
+    width: 100%;
+    min-height: 60vh;
+    background-image: url(https://media.assettype.com/freepressjournal/2024-03/cb7b6175-832b-4970-91bf-79b688233eb3/Tata_Harrier_Dark.jpeg?width=1200); 
+    background-size: cover;
+    background-position:100% 70%;
+    
+}
+#overlay{
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+    background-color: rgba(255, 255, 255, 0);
+}
+#text{
+    width: 100%;
+    padding: 0 10vw;
+    position: absolute; 
+    bottom: 20%;
+    right: 8%;
+    background-color: rgba(255, 0, 0, 0);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+#text h1{
+    font-size: 3vw;
+    color: white;
+    font-weight: 500;
+}
+#text-right{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#text-right p{
+    font-size: 15px;
+    width: 40%;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0);
+   
+}
+#text-right i{
+    color: #fff;
+   
+}
+
+#bottom{
+    width: 100%;
+    min-height: 40vh;
+    background-color: blue;
+    display: flex;
+
+}
+#b1{
+    width: 30%;
+    min-height: inherit;
+    background-image: url(https://htcms-prod-images.s3.ap-south-1.amazonaws.com/htmobile1/tata_harrier/images/colour_tata-harrier_oberon-black_600x400.jpg);
+    background-size: cover;
+    
+
+}
+#b2{
+    width: 25%;
+    min-height: inherit;   
+}
+#b2top{
+    min-height: 30vh;
+    background-image: url(https://www.livehindustan.com/lh-img/uploadimage/library/2023/12/05/16_9/16_9_7/tata_curve_launch_date_tata_harrier_ev_tata_harrier_ev_price_tata_safari_petrol_version_tata_lat_1701771519.jpeg);
+    background-size: cover;
+
+}
+#b2bottom{
+    min-height: 12vh;    
+    background-image: url(https://s7ap1.scene7.com/is/image/tatapassenger/1440x500?$B-BG-1440-500-S$&fit=crop&fmt=webp);
+    background-size: cover;
+}
+
+#b3{
+    width: 25%;
+    min-height: inherit;    background-color: green;
+}
+#b3top{
+    
+    min-height: 30vh;
+    background-image: url(https://www.livemint.com/lm-img/img/2024/02/02/600x338/tata_curvv_1706868066813_1706868078835.jpg);
+    background-size: cover;
+}
+#b3bottom{
+  
+    min-height: 12vh;
+    background-image: url(https://static.caronphone.com/public/car_graphics/506/exterior/506_03092024184846_4.webp);
+
+    background-size:cover;
+   
+
+}
+
+#b4{
+    width: 20%;
+    min-height: inherit;    background-color: rgb(40, 43, 43);
+    padding: 30px;
+    color: white;
+}
+.notf{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.notf #photo1{
+    width: 40px;
+    height: 40px;   
+    background-image: url(tata.jpg);
+    background-size: cover;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.notf #photo2{
+    width: 40px;
+    height: 40px;   
+    background-image: url(images.jpeg);
+    background-size: cover;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.notf #photo3{
+    width: 40px;
+    height: 40px;   
+    background-image: url(tata4.avif);
+    background-size: cover;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.notf p{
+    width: 86%;
+}
+
+
+@media(max-width: 500px){
+    #overlay #text{
+        flex-direction: column;
+        align-items: flex-end;
+
+    }
+    #overlay #text #text-right{
+        flex-direction: column;
+        align-items: right;
+
+    }
+    #overlay #text #text-right p{
+        width: initial;
+        margin-top: 20px;
+    }
+    #overlay #text #text-right #icon{
+        margin-top: 30px;
+
+    }
+    #text h1{
+        font-size: 10vw;
+    }
+    #bottom{
+        min-height: 30vh;
+        flex-direction: column;
+    }
+    #b1{
+        width: 100%;
+    }
+    #b2{
+        flex-direction: column;
+        width: 100%;
+    }
+    #b2top{
+        min-height: ;
+    }
+    #b2bottom{
+        min-height: 15vh;
+    }
+    #b3{
+        flex-direction: column;
+        width: 100%;
+    }
+   
+
+    #b3bottom{
+        min-height: 15vh;
+    }
+    #b4{
+        width: 100%;
+    }
+}
